@@ -27,7 +27,7 @@
         <!-- Sidebar -->
         <div class="bg-light border-right" id="sidebar-wrapper">
             <div class="sidebar-heading">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
             </div>
