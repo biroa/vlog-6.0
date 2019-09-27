@@ -9,5 +9,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
+    
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    protected const PAGE_PER_ITEM = 8;
 }

@@ -29,15 +29,4 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
-    data: {
-        isActive: false,
-        activeClass: 'toggled'
-    },
-    methods: {
-        toggleSidebar: function(){
-            this.isActive = !this.isActive;
-            console.log(this.isActive);
-            // some code to filter users
-        }
-    }
 });
