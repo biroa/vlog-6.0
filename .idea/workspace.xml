@@ -4,7 +4,7 @@
     <list default="true" id="17c2c8d7-3775-44d6-9f84-755bf6df8933" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +194,7 @@
       <workItem from="1569420339034" duration="16127000" />
       <workItem from="1569506193841" duration="381000" />
       <workItem from="1569506593809" duration="13044000" />
-      <workItem from="1569577375274" duration="12073000" />
+      <workItem from="1569577375274" duration="12683000" />
     </task>
     <servers />
   </component>

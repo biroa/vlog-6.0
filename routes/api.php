@@ -21,4 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //Route::group(['middleware' => 'auth:basic'], function () {
 //    Route::resource('posts', 'PostController');
 //});
-Route::resource('posts', 'PostController');//->middleware('auth');
+Route::resource('posts', 'PostController')->middleware('auth:api');
