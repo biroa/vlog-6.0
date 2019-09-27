@@ -35,11 +35,10 @@ class PostController extends Controller
     public function store(Request $request)
     {
         try {
-            dd(auth());
             $data = $request->post();
             $data['user_id'] = auth()->user();
             $data['category_id'] = 1;
-            dd($data);
+            
             $new_record = Post::create($data);
             $message = 'New Record insertion is Done!';
             $status_code = Response::HTTP_ACCEPTED;
