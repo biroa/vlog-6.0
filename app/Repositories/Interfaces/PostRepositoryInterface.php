@@ -9,4 +9,6 @@ interface PostRepositoryInterface
     public function all();
     
     public function  paginate($perPage, $columns);
+    
+    public function findOrFail($id);
 }

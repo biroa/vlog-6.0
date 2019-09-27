@@ -26,4 +26,8 @@ class PostRepository implements PostRepositoryInterface
         return $this->post::paginate($perPage, $columns);
     }
     
+    public function findOrFail($id)
+    {
+        return $this->post::findOrFail($id);
+    }
 }

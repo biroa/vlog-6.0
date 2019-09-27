@@ -24,8 +24,6 @@ class PostController extends Controller
      */
     public function index()
     {
-        
-        //$records = Post::paginate(self::PAGE_PER_ITEM);
         $records = $this->postRepository->paginate(self::PAGE_PER_ITEM);
         
         return [
@@ -45,9 +43,8 @@ class PostController extends Controller
     {
         try {
             $data = $request->post();
-            $data['user_id'] = auth()->user();
+            $data['user_id'] = auth()->id();
             $data['category_id'] = 1;
-            
             $new_record = Post::create($data);
             $message = 'New Record insertion is Done!';
             $status_code = Response::HTTP_ACCEPTED;
@@ -73,13 +70,14 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        $record = Post::findOrFail($id);
+        $record = $this->postRepository->findOrFail($id);
         
         return [
             'data' => $record,
             'message' => 'One Record with the id of' . $id,
             'status_code' => Response::HTTP_ACCEPTED,
         ];
+        
     }
     
     /**
