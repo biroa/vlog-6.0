@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-
-use Symfony\Component\HttpFoundation\Response;
 use App\Post;
+use App\Repositories\Interfaces\PostRepositoryInterface;
+use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
@@ -12,12 +12,21 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class PostController extends Controller
 {
+    private $postRepository;
+    
+    public function __construct(PostRepositoryInterface $postRepository)
+    {
+        $this->postRepository = $postRepository;
+    }
+    
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $records = Post::paginate(self::PAGE_PER_ITEM);
+        
+        //$records = Post::paginate(self::PAGE_PER_ITEM);
+        $records = $this->postRepository->paginate(self::PAGE_PER_ITEM);
         
         return [
             'data' => $records,

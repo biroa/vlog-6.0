@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17c2c8d7-3775-44d6-9f84-755bf6df8933" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Interfaces/PostRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/PostRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +199,7 @@
       <workItem from="1569420339034" duration="16127000" />
       <workItem from="1569506193841" duration="381000" />
       <workItem from="1569506593809" duration="13044000" />
-      <workItem from="1569577375274" duration="13746000" />
+      <workItem from="1569577375274" duration="16433000" />
     </task>
     <servers />
   </component>
